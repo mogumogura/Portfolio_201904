@@ -49,7 +49,8 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
- # Add Better Errors
+
+  # Add Better Errors
   gem "better_errors"
   gem "binding_of_caller"
 end
@@ -60,13 +61,35 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-# Run against the latest stable release
+
 group :development, :test do
+  # Rspeck
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
+
+  # デバック用gem
+  gem 'pry-rails'
+  gem 'pry-byebug'
 end
+
+  gem 'bootstrap', '~> 4.3.1'
+
+  # 検索用gem
+  gem "ransack"
+
+  # PV数を計測するgem
+  gem 'impressionist'
+
+  # 経度緯度を取得するgem
+  gem 'geocoder'
+
+  gem "jquery-rails"
+  gem 'jquery-ui-rails'
+
+  gem 'devise'
