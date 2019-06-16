@@ -14,3 +14,32 @@
  *= require_self
  */
 @import "bootstrap";
+
+.wrapper {    
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.form-signin {
+  max-width: 420px;
+  padding: 30px 38px 66px;
+  margin: 0 auto;
+  /*background-color: #eee;*/
+  /*border: 3px dotted rgba(0,0,0,0.1);*/
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+input[type="text"] {
+        width: 300px;
+        height: 40px;
+}
+
+input[type="email"] {
+        width: 300px;
+        height: 40px;
+}
+
+input[type="password"] {
+        width: 300px;
+        height: 40px;
+}

@@ -1,2 +1,32 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<div class="body" style="margin-top: 50px;">
+  <div class="container">
+      <div class="row">
+      <div class="col-md-8 offset-2">
+        <table class="table table-bordered">
+          <h4 class="">会員情報</h4>
+        <tbody class="text-center">
+          <tr>
+            <th class="table-active">名前</th>
+            <td ></td>
+          </tr>
+          <tr>
+            <th class="table-active">郵便番号</th>
+            <td ><%= @user.postal_code %></td>
+          </tr>
+          <tr>
+            <th class="table-active">住所</th>
+            <td ><%= @user.address %></td>
+          </tr>
+          <tr>
+            <th class="table-active">メールアドレス</th>
+            <td ><%= @user.email %></td>
+          </tr>
+        </tbody>
+        </table>
+        <%= link_to destroy_user_session_path, method: :delete, class: "logout" do %>
+                <span class="glyphicon glyphicon-log-out" aria-hidden="true"> logout</span>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
