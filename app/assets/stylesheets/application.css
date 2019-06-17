@@ -17,7 +17,7 @@
 
 .wrapper {
   margin-top: 80px;
-  margin-bottom: 20px;
+  margin-bottom: 80px;
 }
 
 .form-signin {
@@ -43,3 +43,76 @@ input[type="password"] {
         width: 300px;
         height: 40px;
 }
+
+.backimage-edit {
+  background-attachment: fixed;
+  background-image: url("foodiesfeed.com_summer-barbeque-feast.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-mask {
+  border-radius: 5px 5px 5px 5px;
+  padding-bottom: 20px;
+  height: 100%;
+  background-color:rgba(255,255,255,0.6);
+
+}
+
+.col-md-6 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.1em;
+}
+
+.edit-title {
+  margin-bottom: 15px;
+  font-size: 35px;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic',cursive;
+}
+
+.edit-table,th,td {
+  width: 450px;
+  border: none;
+}
+
+button.css3button {
+  width: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  padding: 10px 20px;
+  background: -moz-linear-gradient(
+    top,
+    #f2ffbf 0%,
+    #ff82ec 25%,
+    #fabe46);
+  background: -webkit-gradient(
+    linear, left top, left bottom,
+    from(#f2ffbf),
+    color-stop(0.25, #ff82ec),
+    to(#fabe46));
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  border: 3px solid #ffffff;
+  -moz-box-shadow:
+    0px 3px 11px rgba(003,003,003,0.5),
+    inset 0px 0px 1px rgba(000,255,051,1);
+  -webkit-box-shadow:
+    0px 3px 11px rgba(003,003,003,0.5),
+    inset 0px 0px 1px rgba(000,255,051,1);
+  box-shadow:
+    0px 3px 11px rgba(003,003,003,0.5),
+    inset 0px 0px 1px rgba(000,255,051,1);
+  text-shadow:
+    0px -1px 0px rgba(000,000,000,0.2),
+    0px 1px 0px rgba(255,255,255,0.3);
+}
+

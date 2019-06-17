@@ -3,37 +3,38 @@
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 
-
+<div class="backimage-edit">
 <div class="container">
   <div class="wrapper">
-    <div class="notice"><%= flash[:notice]%></div>
+    <div class="bg-mask">
+    <div class="notice" style="text-align: center; font-size: 20px;"><%= flash[:notice]%></div>
         <div class="row" style="margin-left: 50px;">
           <div class="col-md-6 clearfix">
-              <table class="table table-bordered " style="width: 400px;">
-                <h2 class="">プロフィール情報</h2>
-              <tbody class="text-center">
+              <table class="edit-table">
+                <h2 class="edit-title">プロフィール情報</h2><br />
+              <tbody class="">
                   <tr>
-                    <th class="table-active">名前</th>
-                    <td ><%= @user.name %></td>
+                    <th class="">名前</th>
+                    <td height="100"><%= @user.name %></td>
                   </tr>
                   <tr>
                     <th class="table-active">郵便番号</th>
-                    <td ><%= @user.postal_code %></td>
+                    <td height="100"><%= @user.postal_code %></td>
                   </tr>
                   <tr>
                     <th class="table-active">住所</th>
-                    <td ><%= @user.address %></td>
+                    <td height="100"><%= @user.address %></td>
                   </tr>
                   <tr>
                     <th class="table-active">メールアドレス</th>
-                    <td ><%= @user.email %></td>
+                    <td height="100"><%= @user.email %></td>
                   </tr>
               </tbody>
               </table>
           </div>
           <div class="col-md-6">
               <%= form_for(@user) do |f| %>
-                <h2 class="">編集</h2>
+                <h2 class="edit-title">編集</h2>
               <tbody class="text-center">
 
                   <%= f.label :氏名 %>
@@ -52,14 +53,12 @@
                   <%= f.text_field :email, class: 'form-control' %>
                   <br />
 
-                  <%= f.label :パスワード %>
-                  <%= f.text_field :password, class: 'form-control' %>
-                  <br />
-
               </tbody>
-                  <%= f.submit "更新する", class: "btn btn-success" %>
+              <button type="submit" name="" value="" class="css3button">更新する</button>
                   <% end %>
           </div>
         </div>
+    </div>
   </div>
+</div>
 </div>
