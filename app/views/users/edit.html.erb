@@ -11,22 +11,22 @@
         <div class="row" style="margin-left: 50px;">
           <div class="col-md-6 clearfix">
               <table class="edit-table">
-                <h2 class="edit-title">プロフィール情報</h2><br />
+                <h2 class="edit-title">プロフィール情報</h2>
               <tbody class="">
                   <tr>
                     <th class="">名前</th>
                     <td height="100"><%= @user.name %></td>
                   </tr>
                   <tr>
-                    <th class="table-active">郵便番号</th>
+                    <th class="">郵便番号</th>
                     <td height="100"><%= @user.postal_code %></td>
                   </tr>
                   <tr>
-                    <th class="table-active">住所</th>
+                    <th class="">住所</th>
                     <td height="100"><%= @user.address %></td>
                   </tr>
                   <tr>
-                    <th class="table-active">メールアドレス</th>
+                    <th class="">メールアドレス</th>
                     <td height="100"><%= @user.email %></td>
                   </tr>
               </tbody>
@@ -34,7 +34,7 @@
           </div>
           <div class="col-md-6">
               <%= form_for(@user) do |f| %>
-                <h2 class="edit-title">編集</h2>
+                <h2 class="edit-title">編集　　　　　　　<%= link_to_if(user_signed_in? && @user.id == current_user.id, "退会", user_path(@user.id), class: "btn-lg btn-danger", method: :delete, data: {confirm: 'ユーザー情報が消されます。本当に退会しますか？' }) {}%></h2>
               <tbody class="text-center">
 
                   <%= f.label :氏名 %>
