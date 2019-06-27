@@ -83,6 +83,7 @@ end
 
 group :production do
   gem 'pg'
+  gem 'msgpack-rails', :git => 'git://github.com/nzifnab/msgpack-rails.git'
 end
 
   gem 'bootstrap', '~> 4.3.1'
