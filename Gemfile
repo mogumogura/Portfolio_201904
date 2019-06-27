@@ -6,9 +6,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', groups: %w(test development), require: false
+# gem 'sqlite3', groups: %w(test development), require: false
 
-gem 'pg', groups: %w(production), require: false
+# gem 'pg', groups: %w(production), require: false
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
 # Use SCSS for stylesheets
@@ -71,6 +71,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 group :development, :test do
+    gem 'sqlite3' #do ~ end内部に追加。他のgemは残してください。
   # Rspeck
   gem 'rspec-rails', '~> 3.8'
   gem 'factory_bot_rails'
@@ -78,6 +79,10 @@ group :development, :test do
   # デバック用gem
   gem 'pry-rails'
   gem 'pry-byebug'
+end
+
+group :production do
+  gem 'pg'
 end
 
   gem 'bootstrap', '~> 4.3.1'
