@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-# ruby  '~> 2.5.1'
+ruby  '2.5.5'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.3'
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3', groups: %w(test development), require: false
+gem 'sqlite3'
 
 # gem 'pg', groups: %w(production), require: false
 # Use Puma as the app server
@@ -82,7 +82,7 @@ group :development, :test do
 end
 
 group :production do
-  gem 'pg'
+  # gem 'pg'
   # gem 'msgpack-rails', :git => 'git://github.com/nzifnab/msgpack-rails.git'
 end
 
