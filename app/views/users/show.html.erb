@@ -1,0 +1,36 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+
+  <div class="container">
+       <div class="wrapper">
+      <div class="col-md-8 offset-2">
+        <table class="table table-bordered">
+          <h4 class="">会員情報</h4>
+        <tbody class="text-center">
+          <tr>
+            <th class="table-active">名前</th>
+            <td ><%= @user.name %></td>
+          </tr>
+          <tr>
+            <th class="table-active">郵便番号</th>
+            <td ><%= @user.postal_code %></td>
+          </tr>
+          <tr>
+            <th class="table-active">住所</th>
+            <td ><%= @user.address %></td>
+          </tr>
+          <tr>
+            <th class="table-active">メールアドレス</th>
+            <td ><%= @user.email %></td>
+          </tr>
+        </tbody>
+        </table>
+        <%= link_to destroy_user_session_path, method: :delete, class: "logout" do %>
+                <span class="glyphicon glyphicon-log-out" aria-hidden="true"> logout</span>
+        <% end %>
+      </div>
+    </div>
+  </div>
