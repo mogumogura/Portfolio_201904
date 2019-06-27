@@ -14,7 +14,10 @@
  *= require_self
  */
 @import "bootstrap";
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
 
+/* ユーザー情報ページ */
 .wrapper {
   margin-top: 80px;
   margin-bottom: 80px;
@@ -115,14 +118,21 @@ button.css3button {
     0px -1px 0px rgba(000,000,000,0.2),
     0px 1px 0px rgba(255,255,255,0.3);
 }
+/* /ユーザー情報ページ */
 
+
+
+/* ヘッダー背景画像 */
 .backimage-search{
   background-attachment: fixed;
   background-image: url("foodiesfeed.com_summer-barbeque-feast.jpg");
   background-position: center;
   background-size: cover;
 }
+/* /ヘッダー背景画像 */
 
+
+/* ナビメニュー */
 .nav-header {
   color: #f5f5f5;
   display: inline;
@@ -136,17 +146,66 @@ button.css3button {
   float: right;
 }
 
-#navgation ul li {
-  position: relative;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #1b2538;*/
 }
+li {
+  float: left;
+  border-right: 1px solid #bbbbbb;
+}
+li:last-child {
+  border-right: none;
+}
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover:not(.active) {
+  background-color: #a9bce2;
+}
+.active {
+  background-color: #a9bce2;
+}
+/* /ナビメニュー */
 
+
+/* 検索フォーム */
+.search_container{
+  box-sizing: border-box;
+}
+.search_container input[type="text"]{
+  border: 1px solid #999;
+  padding: 3px 5px;
+  border-radius: 30px;
+/*  height: 2.0em;
+  width: 245px;*/
+  overflow: hidden;
+  text-align: center;
+}
+.search_container input[type="text"]:focus {
+  outline: 0;
+}
+/* /検索フォーム */
+
+
+/* 店舗リスト */
 .shop-list {
   padding: 0.5em 1em;
     margin: 2em 0;
     color: #5d627b;
     background: white;
-    border-top: solid 5px #5d627b;
+    border-top: solid 15px #fbc000;
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+    border-radius: 4% 4% 4% 4%;
+    font-size: 80%;
+    position: relative;
 }
 
 .shop-list p {
@@ -154,4 +213,21 @@ button.css3button {
     padding: 0;
 }
 
+.shop-number {
+  border-radius: 50%;
+  background-color: #ea4334;
+  z-index: 1;
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  font-size: 30px;
+  text-align: center;
+  color: white;
+  right: 250px;
+  margin: 7px 0px 0px 0px;
+}
 
+.shop-name {
+  font-size: 20px;
+}
+/* /店舗リスト */

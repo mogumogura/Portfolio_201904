@@ -93,3 +93,5 @@ end
   gem 'jquery-ui-rails'
 
   gem 'devise'
+
+  gem 'font-awesome-sass', '~> 5.4.1'
