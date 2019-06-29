@@ -175,6 +175,13 @@ li a:hover:not(.active) {
 }
 /* /ナビメニュー */
 
+/*.logo-image {
+  background-attachment: fixed;
+  background-image: url("29062019055041A.png");
+  background-position: center;
+}*/
+
+
 
 /* 検索フォーム */
 .search_container{
@@ -188,6 +195,8 @@ li a:hover:not(.active) {
   width: 245px;*/
   overflow: hidden;
   text-align: center;
+  vertical-align: middle;
+  display: inline-block;
 }
 .search_container input[type="text"]:focus {
   outline: 0;
@@ -196,9 +205,15 @@ li a:hover:not(.active) {
 
 
 /* 店舗リスト */
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .shop-list {
   padding: 0.5em 1em;
-    margin: 2em 0;
+    margin: 2em 5px 0 2px;
     color: #5d627b;
     background: white;
     border-top: solid 15px #fbc000;
@@ -206,6 +221,7 @@ li a:hover:not(.active) {
     border-radius: 4% 4% 4% 4%;
     font-size: 80%;
     position: relative;
+    width: 270px;
 }
 
 .shop-list p {
@@ -223,7 +239,7 @@ li a:hover:not(.active) {
   font-size: 30px;
   text-align: center;
   color: white;
-  right: 250px;
+  /*right: 250px;*/
   margin: 7px 0px 0px 0px;
 }
 
