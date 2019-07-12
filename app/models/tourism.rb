@@ -1,14 +1,13 @@
 require 'net/http'
 require 'open-uri'
 require 'json'
-require "addressable/uri"
 
 class Tourism < ApplicationRecord
 
   def self.search(search)
     word = search
     @data={
-      "keyid": "8c21c9dbcd8841703fc79465ef68b9c1",
+      "keyid": ENV["GNAVI_API_KEY"],
       "freeword": word,
       "hit_per_page": 30,
     }
@@ -19,3 +18,4 @@ class Tourism < ApplicationRecord
     return JSON.parse(json) #配列形式に変換
   end
 end
+
