@@ -8,16 +8,7 @@
   <header id="header-section" class="">
     <div class="container">
       <div class="nav-header">
-        <h1 id="logo">
-        </h1>
-          <!-- <nav class="navigation">
-            <ul>
-              <li><a class="active" href="#home">Home</a></li>
-              <li><a href="#news">News</a></li>
-              <li><a href="#contact">Contact</a></li>
-              <li><a href="#about">About</a></li>
-            </ul>
-        </nav> -->
+        <h1 id="logo"></h1>
       </div>
     </div>
   </header>
@@ -34,20 +25,6 @@
               <i class="fas fa-search-location fa-2x" style="color:red;"></i>
             </button></p>
           </form>
-      </div>
-
-        <!-- <form action="#" method="get" class="search_container">
-          <div class="col-md-4"></div>
-          <div class="col-md-4">
-            <div><%= image_tag 'foodsearchlogo.png', :size=>'200x100' %></div>
-            <div style="display: inline-block;"><input type="text" name="search" size="25" placeholder="例）渋谷駅　カフェ　Wifi"></div>
-            <button type="submit" style="background-color:rgba(255,255,255,0); border: none; margin-top: 5px;" onclick="searchgo()">
-              <i class="fas fa-search-location fa-2x" style="color:red;"></i>
-            </button>
-          </div>
-          <div class="col-md-4">
-          </div>
-          </form> -->
       </div>
     </div>
   </div>
@@ -92,49 +69,6 @@
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDEqzy08A_gnyBRKMkvmFLvemgj0Ch7-Uk&libraries=places"></script>
 
 <script>
-
-
-// var map;
-// var service;
-// var infowindow;
-// initialize()
-
-// function initialize() {
-//   // 位置座標のインスタンスを作成する
-//   var pyrmont = new google.maps.LatLng(-33.8665433,151.1956316);
-//   map = new google.maps.Map(document.getElementById('map'), {
-//       center: pyrmont,
-//       zoom: 15
-//     });
-//  //指定位置の半径1500m内のカフェを検索
-//   var request = {
-//     location: pyrmont,
-//     radius: '1500',
-//     type: ['cafe']　 // https://developers.google.com/places/supported_types 参照
-//   };
-//   service = new google.maps.places.PlacesService(map);
-//   service.nearbySearch(request, callback);
-// }
-
-// function createMarker(latlng, icn)
-// {
-//   // マーカー作成　　https://developers.google.com/maps/documentation/javascript/examples/marker-simple　参照
-//   var marker = new google.maps.Marker({
-//     position: latlng,
-//     map: map,
-//   });
-// }
-
-// function callback(results, status) {
-//   if (status == google.maps.places.PlacesServiceStatus.OK) {
-//     for (var i = 0; i < results.length; i++) {
-//       var place = results[i];
-//       latlng = place.geometry.location;
-//       icn = place.icon;
-//       createMarker(latlng, icn);
-//     }
-//   }
-// }
 
 $(function(){
 

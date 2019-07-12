@@ -27,8 +27,6 @@
   max-width: 420px;
   padding: 30px 38px 66px;
   margin: 0 auto;
-  /*background-color: #eee;*/
-  /*border: 3px dotted rgba(0,0,0,0.1);*/
   box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 
@@ -47,12 +45,6 @@ input[type="password"] {
         height: 40px;
 }
 
-/*.backimage-edit {
-  background-attachment: fixed;
-  background-image: url("foodiesfeed.com_summer-barbeque-feast.jpg");
-  background-position: center;
-  background-size: cover;
-}*/
 
 .container {
   width: 100%;
@@ -125,7 +117,7 @@ button.css3button {
 /* ヘッダー背景画像 */
 .backimage-search{
   background-attachment: fixed;
-  background-image: url("foodiesfeed.com_summer-barbeque-feast.jpg");
+  background-image: image-url("foodiesfeed.com_summer-barbeque-feast.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -151,7 +143,6 @@ ul {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  /*background-color: #1b2538;*/
 }
 li {
   float: left;
@@ -175,12 +166,6 @@ li a:hover:not(.active) {
 }
 /* /ナビメニュー */
 
-/*.logo-image {
-  background-attachment: fixed;
-  background-image: url("29062019055041A.png");
-  background-position: center;
-}*/
-
 
 
 /* 検索フォーム */
@@ -191,8 +176,6 @@ li a:hover:not(.active) {
   border: 1px solid #999;
   padding: 3px 5px;
   border-radius: 30px;
-/*  height: 2.0em;
-  width: 245px;*/
   overflow: hidden;
   text-align: center;
   vertical-align: middle;
@@ -239,7 +222,6 @@ li a:hover:not(.active) {
   font-size: 30px;
   text-align: center;
   color: white;
-  /*right: 250px;*/
   margin: 7px 0px 0px 0px;
 }
 
