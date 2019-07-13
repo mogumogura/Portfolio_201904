@@ -1,6 +1,7 @@
-# food.search
+## food.search
+[food.search](https://food-search.work/)
 
-# Overview
+## Overview
   
 * Ruby version
 　'2.5.5'
@@ -9,14 +10,11 @@
 
 * Services
 　search engines
- 
-* URL
-　[food.search](https://food-search.work/)
 
 * domain
-　[お名前.com](https://www.onamae-server.com/)
+   - [お名前.com](https://www.onamae-server.com/)
   
 * Web API
-　[ぐるなび API](https://api.gnavi.co.jp/api/)
+   -  [ぐるなび API](https://api.gnavi.co.jp/api/)
   
-　[Google Maps Platform](https://cloud.google.com/maps-platform/)
+   -  [Google Maps Platform](https://cloud.google.com/maps-platform/)
