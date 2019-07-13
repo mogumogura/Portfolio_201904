@@ -1,24 +1,22 @@
-README
+# food.search
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
+# Overview
+  
 * Ruby version
+　'2.5.5'
 
-* System dependencies
+ System dependencies
 
-* Configuration
+* Services
+　search engines
+ 
+* URL
+　[food.search](https://food-search.work/)
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* domain
+　[お名前.com](https://www.onamae-server.com/)
+  
+* Web API
+　[ぐるなび API](https://api.gnavi.co.jp/api/)
+  
+　[Google Maps Platform](https://cloud.google.com/maps-platform/)
