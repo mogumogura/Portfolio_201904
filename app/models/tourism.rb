@@ -1,16 +1,16 @@
 require 'net/http'
 require 'open-uri'
 require 'json'
-require "addressable/uri"
+#require "addressable/uri"
 
 class Tourism < ApplicationRecord
 
   def self.search(search)
     word = search
     @data={
-      "keyid": "496e40bdc04b4f2a3187a01c2afabd6d",
+      "keyid": "8c21c9dbcd8841703fc79465ef68b9c1",
       "freeword": word,
-      "hit_per_page": 40,
+      "hit_per_page": 30,
     }
 
     query = @data.to_query
